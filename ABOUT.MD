@@ -16,6 +16,8 @@ I used JS (node/react) to domenstrate my skills in this language, most of my rec
 - better UI in general.
 - speerate client from server code to make it easier to release chanegs without worry.
 - Could have used graphQl for this.
+- Easier debugging on Heroku.
+- be able to see my app actually working on Heroku, as requests were being blcoked by expedia servers returning the bot page.
 
 ## Thought process
 - at first I thought i would finish this project much faster than what happened, started with the simplest soultions and built on it, later, i figured that i should have thought more about the backend validations for the API filters, which made me spend some extra time on refactoring some parts.

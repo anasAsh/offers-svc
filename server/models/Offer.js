@@ -169,10 +169,6 @@ class Offer {
       const url = new URL(this.baseUrl);
       url.search = new URLSearchParams(search);
       return fetch(url)
-        .then(() => {
-          console.warn(res.body);
-          return res;
-        })
         .then((res) => res.json());
 
     }
