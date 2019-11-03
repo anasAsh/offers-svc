@@ -1,0 +1,6 @@
+{
+    "SERVER": {
+      "PORT": "3001",
+      "OFFERS_API": "https://some.api.com/"
+    }
+  }

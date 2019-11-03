@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Results /> component should handle error 1`] = `"Error: {}"`;
+
+exports[`<Results /> component should match the snapshot 1`] = `""`;
+
+exports[`<Results /> component should render data 1`] = `"<div class=\\"Results\\">Results<ul><li><pre>{\\"someData\\":1}</pre></li></ul></div>"`;
+
+exports[`<Results /> with no props should handle error 1`] = `"Error: {}"`;
+
+exports[`<Results /> with no props should match the snapshot 1`] = `""`;
+
+exports[`<Results /> with no props should render data 1`] = `"<div class=\\"Results\\">Results<ul><li><pre>{\\"someData\\":1}</pre></li></ul></div>"`;
