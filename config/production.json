@@ -1,0 +1,6 @@
+{
+    "SERVER": {
+      "PORT": "3000",
+      "OFFERS_API": "https://offersvc.expedia.com/offers/v2/getOffers"
+    }
+  }
