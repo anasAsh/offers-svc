@@ -2,7 +2,7 @@ const express = require('express');
 var cors = require('cors')
 const config = require('config');
 const path = require('path');
-const Api = require('./api');
+const Offer = require('./models/Offer');
 
 const PORT = process.env.PORT || config.get('SERVER.PORT');
 
@@ -16,15 +16,21 @@ app.use(cors());
 
   // Answer API requests.
   app.get('/api/offers', (req, res, next) => {
-    Api.getOffers(req.query)
+    const offer = new Offer(req.query);
+    offer.fetch()
       .then(data => {
         res.set('Content-Type', 'application/json');
         res.send(data);
       })
       .catch((error) => {
         console.error(error);
-        res.status(503);
-        res.send({error: 'Service Unavailable'});
+        if (error.validation) {
+          res.status(400);
+        } else {
+          res.status(503);
+        }
+        res.set('Content-Type', 'application/json');
+        res.send({error: error});
       })
   });
 
