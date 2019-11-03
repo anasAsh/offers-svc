@@ -30,7 +30,7 @@ app.use(cors());
           res.status(503);
         }
         res.set('Content-Type', 'application/json');
-        res.send({error: error});
+        res.send({error});
       })
   });
 

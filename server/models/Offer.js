@@ -129,12 +129,11 @@ const mathValidations = {
 class Offer {
     constructor(params) {
       // do not allow client to edit baseOfferParams
-      this.params = {...params, ...baseOffersParams};
+      this.params = {...(params || {}), ...baseOffersParams};
       this.baseUrl = OFFERS_API;
     }
 
     valid() {
-      console.log(this.params);
       const errors = VALIDATIONS
         .reduce((acc, validation) => {
           return [...acc, validationFunctions[validation.rule](this.params, validation)];
