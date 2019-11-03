@@ -4,7 +4,7 @@ this is a simple Node/React application to consume Expedia's offer service api.
 ## Running locally:
 clone this repo then follow below instructions for server and UI:
 ```
-$ git clone git@github.com:anasAsh/expedia-offers-svc.git
+$ git clone git@github.com:anasAsh/offers-svc.git
 ```
 ### Server:
 ```
