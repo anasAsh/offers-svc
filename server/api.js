@@ -48,7 +48,15 @@ const buildUrl = (baseUrl, params) => {
 
 const getOffers = (params) => {
   return fetch(buildUrl(OFFERS_API, params || {}))
-    .then(res => res.json());
+    .then(res => {
+      try {
+        return res.json();
+      } catch {
+        console.log(res);
+        throw Error('bad response');
+      }
+      
+    });
 };
 
 module.exports = {
