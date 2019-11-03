@@ -4,7 +4,7 @@ const config = require('config');
 const path = require('path');
 const Api = require('./api');
 
-const PORT = config.get('SERVER.PORT');
+const PORT = process.env.PORT || config.get('SERVER.PORT');
 
 
 
