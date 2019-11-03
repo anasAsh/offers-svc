@@ -70,7 +70,8 @@ $ cd client && npm test
 
 
 ## issues
-- no pagination or page info in the response.
+- No pagination or page info in the response.
+- Requests are blocked from Heroku, after debugging i found that the reqeusts are blocked by our CDN, thinking this app is a bot.
 
 
 
